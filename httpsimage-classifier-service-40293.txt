@@ -1,0 +1,1 @@
+https://image-classifier-service-402934239425.us-central1.run.app

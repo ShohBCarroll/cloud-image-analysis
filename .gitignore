@@ -1,0 +1,27 @@
+# Python bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment folder (Common names - use yours!)
+venv/
+myenv/
+env/
+.venv/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE files (example for VS Code)
+.vscode/
+
+# Temporary files / downloaded models (if large and downloadable)
+# e.g., if MobileNetV2 weights were saved locally and are huge
+# *.h5
+# *.weights
+
+# Any sensitive files (API keys, credentials - shouldn't be in this project)
+# .env
+# *.credential
