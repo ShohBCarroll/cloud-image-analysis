@@ -7,6 +7,7 @@ Features: A pretrained model "imageNET" was used to clasiffy these images. It wi
 List of technologies used: Python, Flask, TensorFlow/Keras (MobileNetV2), Docker, GCP (Cloud Run, Artifact Registry).
 
 Local set up:
+    
     Step 1: Make sure all libraries are properly installed. It is recomended to use Anaconda or create a virtual envorinment. For myself, I created a virtual environment. The libraries needed are tensorflow, Pillow, numpy, and requests.
 
     Step 2: Collect some simple images online. For myself, I collected some simple images of cats and dogs. 
@@ -15,11 +16,13 @@ Local set up:
     Note: Do not worry if there are yellow squigly lines under the tensorflow.keras libraries if you are using vscode. The libraries will still run with no problem as long as you have installed the tensorflow library.
 
 Web API Set up:
+    
     Step 1: Install the library Flask.
 
     Step 2: Create a python file app.py. This will act as our simple web API. This file will also include setting up the /predict endpoint that will listen for POST requests, loads the model, creates a pipeline to preprocess the images, and handles the prediction. It should be set up so that the predictions are generated in a JSON file format.
 
 Docker Container Set up:
+    
     Step 1: Make sure that Docker Desktop is installed.
 
     Step 2: Create a Docker file in the project directory.
@@ -29,6 +32,7 @@ Docker Container Set up:
     Step 4: Now we can the Docker container with this bash command: "docker run -p 5001:5000 -d image-classifier-api". This maps the port 5001 on the host machine to the port 5000 on the container. The "-d image-classifier-api" allows for the container to run in the background.
 
 Cloud Deployment:
+    
     Step 1: For this project, I chose Google Cloud Platform as my cloud provider. This will allow me to host the docker container online. Create a Google Cloud Platform account. 
 
     Step 2: Install the Google Cloud SDK so that the gcloud tool is installed. 
